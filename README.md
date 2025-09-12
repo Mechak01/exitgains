@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Exit Gains – Progress Recap
 
 This document tracks all major progress made so far in building the **Exit Gains website and brand identity**.  
@@ -125,3 +126,7 @@ Built main site skeleton with clear sections:
 ---
 
 🔥 Exit Gains is no longer just a concept — it’s shaping into a full cinematic fitness brand experience online.
+=======
+# exitgains
+Landing site for Exit Gains – Train Hard. Build Strength. Exit Weakness.
+>>>>>>> 3a03737188660ae88c732f2cf4bdd30a44734183
