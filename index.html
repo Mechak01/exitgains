@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exit Gains – Train Hard. Build Strength. Exit Weakness.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar transparent">
+    <div class="container nav-container">
+      <img src="assets/images/logo.png" alt="Exit Gains Logo" class="logo" />
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <img src="assets/icons/hamburger.png" alt="Menu" class="nav-icon" id="navIcon" />
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#footer">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="assets/images/logo.png" alt="Exit Gains Logo" class="logo" />
+      <h1>Train Hard. Build Strength. <span>Exit Weakness.</span></h1>
+      <div class="buttons">
+        <a href="https://youtube.com/@exitgains?si=zwCUgeCkYa707ixr" class="btn btn-primary">Watch on YouTube</a>
+        <a href="#programs" class="btn btn-secondary">Join the Movement</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about reveal">
+    <div class="container">
+      <h2>About Exit Gains</h2>
+      <p>
+        Exit Gains isn’t just another fitness brand—it’s the story of breaking out of weakness, doubt, and rejection, and finding strength through discipline. It started with one athlete who knew what it felt like to be overlooked, to fail, to hit walls in sports and in life. But instead of giving up, those setbacks became fuel. The gym became a place of self-discovery, not just physical growth. Every rep, every drop of sweat carried the message: strength isn’t given—it’s earned.
+      </p>
+      <p>
+        Exit Gains was built on that foundation. It’s a movement for anyone who’s been told they’re not enough, for anyone who’s struggled to fit in, for anyone who’s fought battles that most people never see. Here, we don’t believe in shortcuts. We don’t chase fake results. We stand for natural bodybuilding, resilience, and the kind of confidence that only comes from doing the work every single day.
+      </p>
+      <p>
+        This brand is more than workouts and progress pictures—it’s about transformation inside and out. It’s about finding peace in the grind, power in the struggle, and pride in knowing you built something real. Exit Gains represents the moment you decide to stop living small, stop doubting yourself, and start rewriting your own story. Train hard. Build strength. Exit weakness. That’s what we live by—and that’s what we stand for.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Hub Section -->
+  <section id="content" class="content-hub reveal">
+    <div class="container">
+      <h2>Watch the Grind</h2>
+      <div class="video-grid">
+        <!-- Video Card 1 -->
+        <div class="video-card" data-video="https://www.youtube.com/embed/Kgj2PoDVams">
+          <img src="assets/images/video1.png" alt="Chest Day Training" />
+          <div class="overlay">
+            <h3>Best Chest Workout for Natural Gains</h3>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card" data-video="https://www.youtube.com/embed/o74xunkJvco">
+          <img src="assets/images/video2.png" alt="Back Day Training" />
+          <div class="overlay">
+            <h3>Back & Biceps Training Montage</h3>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card" data-video="https://www.youtube.com/embed/xNh78XppS-8">
+          <img src="assets/images/video3.png" alt="Motivation Clip" />
+          <div class="overlay">
+            <h3>Exit Weakness. Enter Strength.</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="platform-badge" id="platformBadge"></div>
+      <iframe 
+        id="videoFrame" 
+        src="" 
+        frameborder="0" 
+        allowfullscreen
+        title="Exit Gains Video Player">
+      </iframe>
+    </div>
+  </div>
+
+  
+  <!-- Programs Teaser Section -->
+  <section id="programs" class="programs reveal">
+    <div class="container">
+      <h2>Our Programs</h2>
+      <p class="tagline">
+        Custom training plans, natural bodybuilding guides, and coaching designed for your transformation.
+      </p>
+
+      <!-- Program Teasers -->
+     <div class="program-grid">
+        <div class="program-card foundations">
+          <div class="program-card-content">
+            <h3>Foundations Program</h3>
+            <p>Master the basics, build discipline, and create the foundation for lasting strength and confidence.</p>
+          </div>
+        </div>
+
+        <div class="program-card strength">
+          <div class="program-card-content">
+            <h3>Strength & Aesthetics</h3>
+            <p>Structured training focused on balanced muscle growth, performance, and a sculpted natural physique.</p>
+          </div>
+        </div>
+
+        <div class="program-card elite">
+          <div class="program-card-content">
+            <h3>Elite Mind & Body</h3>
+            <p>Break past plateaus with advanced methods that challenge not only your body, but also your mindset.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Email Signup -->
+      <form class="signup-form" action="https://formspree.io/f/mpwdzekz" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Get Notified</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer / Community Section -->
+  <footer id="footer" class="footer reveal">
+    <div class="container">
+      <h2>Join the Community</h2>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://youtube.com/@exitgains" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.tiktok.com/@exitgains" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.instagram.com/exitgains" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://twitter.com/exitgains" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+
+      <!-- Contact Email -->
+      <p class="email">📧 meshaktomamba@gmail.com</p>
+
+      <p class="copyright">© 2025 Exit Gains. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

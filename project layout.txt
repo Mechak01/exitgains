@@ -1,0 +1,14 @@
+exitgains/
+    index.html          
+    css/
+        style.css      
+    js/
+        main.js         
+    assets/
+        images/
+            logo.png   
+            (...)
+        icons/
+            close.png
+            (...)
+
