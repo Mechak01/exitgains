@@ -30,8 +30,8 @@
       <img src="assets/images/logo.png" alt="Exit Gains Logo" class="logo" />
       <h1>Train Hard. Build Strength. <span>Exit Weakness.</span></h1>
       <div class="buttons">
-        <a href="https://youtube.com/@exitgains?si=zwCUgeCkYa707ixr" class="btn btn-primary">Watch on YouTube</a>
-        <a href="#programs" class="btn btn-secondary">Join the Movement</a>
+        <a href="#programs" class="btn btn-primary pulse">Start Your Transformation</a>
+        <a href="https://youtube.com/@exitgains?si=zwCUgeCkYa707ixr" class="btn btn-secondary">Watch on YouTube</a>
       </div>
     </div>
   </header>
@@ -54,36 +54,41 @@
 
   <!-- Content Hub Section -->
   <section id="content" class="content-hub reveal">
-    <div class="container">
-      <h2>Watch the Grind</h2>
-      <div class="video-grid">
-        <!-- Video Card 1 -->
+    <div class="container story-flow">
+
+      <!-- Video 1 -->
+      <div class="story-block left reveal">
         <div class="video-card" data-video="https://www.youtube.com/embed/Kgj2PoDVams">
-          <img src="assets/images/video1.png" alt="Chest Day Training" />
-          <div class="overlay">
-            <h3>Best Chest Workout for Natural Gains</h3>
-          </div>
+          <img src="assets/images/video1.png" alt="The Struggle" />
+          <div class="overlay"><h3>The Struggle</h3></div>
         </div>
-
-        <!-- Video Card 2 -->
-        <div class="video-card" data-video="https://www.youtube.com/embed/o74xunkJvco">
-          <img src="assets/images/video2.png" alt="Back Day Training" />
-          <div class="overlay">
-            <h3>Back & Biceps Training Montage</h3>
-          </div>
-        </div>
-
-        <!-- Video Card 3 -->
-        <div class="video-card" data-video="https://www.youtube.com/embed/xNh78XppS-8">
-          <img src="assets/images/video3.png" alt="Motivation Clip" />
-          <div class="overlay">
-            <h3>Exit Weakness. Enter Strength.</h3>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Connector Line -->
+      <div class="story-line"></div>
+
+      <!-- Video 2 -->
+      <div class="story-block right reveal">
+        <div class="video-card" data-video="https://www.youtube.com/embed/o74xunkJvco">
+          <img src="assets/images/video2.png" alt="The Grind" />
+          <div class="overlay"><h3>The Grind</h3></div>
+        </div>
+      </div>
+
+      <!-- Connector Line -->
+      <div class="story-line"></div>
+
+      <!-- Video 3 -->
+      <div class="story-block left reveal">
+        <div class="video-card" data-video="https://www.youtube.com/embed/xNh78XppS-8">
+          <img src="assets/images/video3.png" alt="The Breakthrough" />
+          <div class="overlay"><h3>The Breakthrough</h3></div>
+        </div>
+      </div>
+
     </div>
   </section>
+
 
   <!-- Video Modal -->
   <div id="videoModal" class="modal">
@@ -137,8 +142,9 @@
 
       <!-- Email Signup -->
       <form class="signup-form" action="https://formspree.io/f/mpwdzekz" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <button type="submit" class="btn btn-primary">Get Notified</button>
+        <input type="email" name="email" placeholder="Your best email…" required />
+        <button type="submit" class="btn btn-primary">Join the Exit Gains Insider List</button>
+        <p class="form-note">🔥 Be first to access new programs, workouts, and exclusive drops.</p>
       </form>
     </div>
   </section>
@@ -165,7 +171,16 @@
   </footer>
 
 
-
+  <!-- Success Modal -->
+  <div id="successModal" class="success-modal">
+    <div class="success-content">
+      <span class="close-success">&times;</span>
+      <h2>🔥 Welcome to Exit Gains</h2>
+      <p>You’re officially part of the movement.</p>
+      <p class="highlight">Check your inbox for updates and exclusive content.</p>
+      <a href="#programs" class="btn btn-primary">Explore Programs</a>
+    </div>
+  </div>
 
 
   <script src="js/main.js"></script>

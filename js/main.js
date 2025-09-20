@@ -90,10 +90,13 @@ window.addEventListener("keydown", (e) => {
 });
 
 
+
 // -----------------------------
 // Signup Form: Programs Section (Formspree integration)
 // -----------------------------
 const signupForm = document.querySelector(".signup-form");
+const successModal = document.getElementById("successModal");
+const closeSuccess = document.querySelector(".close-success");
 
 if (signupForm) {
   signupForm.addEventListener("submit", async (e) => {
@@ -111,8 +114,14 @@ if (signupForm) {
       });
 
       if (res.ok) {
-        alert(`✅ Thanks! We'll notify you at ${email}`);
+        // ✅ Show success modal
+        successModal.classList.add("show");
         emailInput.value = "";
+
+        // Optional auto-close after 5s
+        setTimeout(() => {
+          successModal.classList.remove("show");
+        }, 5000);
       } else {
         alert("⚠️ Something went wrong. Please try again.");
       }
@@ -122,6 +131,23 @@ if (signupForm) {
     }
   });
 }
+
+
+// -----------------------------
+// Success Modal: Close handling
+// -----------------------------
+if (closeSuccess) {
+  closeSuccess.addEventListener("click", () => {
+    successModal.classList.remove("show");
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === successModal) {
+      successModal.classList.remove("show");
+    }
+  });
+}
+
 
 
 // -----------------------------

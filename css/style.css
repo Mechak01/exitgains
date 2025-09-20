@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@400;700&display=swap');
 
 
+/* Fix anchor link scroll offset (for fixed navbar) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* adjust to your navbar height */
+}
+
+
 /* ==== Base Reset ==== */
 * {
   margin: 0;
@@ -332,11 +339,59 @@ h1 {
   text-transform: uppercase;
 }
 
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+/* ==== START Story Flow Layout (Exit Gains narrative videos) ==== */
+.story-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
+
+.story-block {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.story-block.left {
+  align-self: flex-start;
+}
+
+.story-block.right {
+  align-self: flex-end;
+}
+
+.story-line {
+  width: 2px;
+  height: 80px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #dc2626,
+    #dc2626 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  opacity: 0.7;
+  margin: 0 auto;
+  animation: drawLine 1.2s ease forwards;
+}
+
+/* Animate connector lines */
+@keyframes drawLine {
+  from { height: 0; opacity: 0; }
+  to { height: 80px; opacity: 0.7; }
+}
+
+/* Override video-card in story mode */
+.story-block .video-card {
+  max-width: 100%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  border-radius: 12px;
+}
+
+/* ==== END Story Flow Layout (Exit Gains narrative videos) ==== */
+
 
 .video-card {
   position: relative;
@@ -677,6 +732,88 @@ h1 {
 /*--------------------------------*/
 /* end footer                   */
 /*------------------------------  */
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*--------------------------------*/
+/*      Start Success Modal       */
+/*------------------------------  */
+
+/* ==== Success Modal ==== */
+.success-modal {
+  display: flex;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.success-modal.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.success-content {
+  background: linear-gradient(135deg, #111, #000);
+  border: 2px solid #dc2626;
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 500px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(220,38,38,0.6);
+  animation: popUp 0.5s ease forwards;
+}
+
+.success-content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-transform: uppercase;
+}
+
+.success-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.success-content .highlight {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.close-success {
+  position: absolute;
+  top: 20px; right: 25px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-success:hover {
+  color: #dc2626;
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+
+/*--------------------------------*/
+/* end footer Success Modal       */
+/*------------------------------  */
+
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
